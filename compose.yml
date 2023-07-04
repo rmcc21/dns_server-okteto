@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+    bind9:
+        container_name: bind9-container
+        environment:
+            - TZ=UTC
+        ports:
+            - '53:53'
+        image: 'ubuntu/bind9:9.18-22.04_beta'
+        volumes:
+            - ./conf:/etc/bind
+            - ./cache:/var/cache/bind
+            - ./records:/var/lib/bind

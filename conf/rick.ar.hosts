@@ -1,0 +1,8 @@
+$ttl 3600
+rick.ar.	IN	SOA	127.0.0.1. ricardo\.cimarelli.gmail.com. (
+			2023070401
+			3600
+			600
+			1209600
+			3600 )
+www.rick.ar.	IN	A	127.0.0.1
